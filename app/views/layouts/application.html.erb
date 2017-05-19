@@ -17,7 +17,7 @@
 
       <% if current_user %>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= label_tag current_user.name %></li>
+            <li><%= current_user.email %></li>
             <%= link_to("logout", destroy_user_session_path, class: "btn btn-xs btn-danger", method: :delete) %>
           </ul>
       <% end %>
